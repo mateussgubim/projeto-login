@@ -4,6 +4,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px)  {
+    /* TABLET */
     body {
         background-image: linear-gradient(to top, var(--rosa), var(--azul));
     }
@@ -19,6 +20,18 @@
         height: 100%;
     }
 
+    #login h1 {
+        font-size: 1.9em;
+    }
+
+    #login p {
+        font-size: 1.1em;
+    }
+
+    form {
+        margin-top: 80px;
+    }
+
     #login > #formulario {
         float: right;
         width: 70%;
@@ -27,7 +40,7 @@
 
     form input {
         border:none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid var(--rosa);
         width: 90%;
     }
     
@@ -37,6 +50,7 @@
 }
 
 @media screen and (min-width: 992px) {
+    /* PC/TV */
     body {
         background-image: linear-gradient(to top, var(--rosa), var(--azul));
     }
@@ -64,11 +78,13 @@
         font-size: 1.2em;
     }
 
-
+    form {
+        margin-top: 50px;
+    }
 
     form input {
         border:none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid var(--rosa);
         width: 90%;
     }
     
