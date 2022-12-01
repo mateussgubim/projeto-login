@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 
@@ -19,8 +20,25 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <!-- icone -->
+                        <span class="material-symbols-outlined">person</span>
 
+                        <!-- campos -->
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" maxlength="30" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <!-- icone -->
+                        <span class="material-symbols-outlined">lock_open</span>
+                        
+                        <!-- campos -->
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" minlength="8" maxlength="21" autocomplete="current-password" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
