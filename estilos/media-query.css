@@ -23,6 +23,17 @@
         float: right;
         width: 70%;
     }
+
+
+    form input {
+        border:none;
+        border-bottom: 1px solid #000;
+        width: 90%;
+    }
+    
+    form input:focus {
+        outline: 0;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -51,5 +62,17 @@
 
     #formulario > p {
         font-size: 1.2em;
+    }
+
+
+
+    form input {
+        border:none;
+        border-bottom: 1px solid #000;
+        width: 90%;
+    }
+    
+    form input:focus {
+        outline: 0;
     }
 }
